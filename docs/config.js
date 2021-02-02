@@ -1,15 +1,15 @@
 var config = {
-  "useNicks": false,
+  "useNicks": true,
   "disableAudioLevels": true,
   "useIPv6": false,
   "webrtcIceTcpDisable": false,
   "defaultSipNumber": "",
-  "startBitrate": 800,
+  "startBitrate": 1000,
   "enableWelcomePage": true,
-  "useStunTurn": false,
+  "useStunTurn": true,
   "enableRtpStats": true,
   "enableRecording": false,
-  "resolution": 720,
+  "resolution": 1080,
   "constraints": {"video": {
     "aspectRatio": 16 / 9,
     "height": {
@@ -18,38 +18,38 @@ var config = {
       "max": 360
     }
   }},
-  "hiddenDomain": "recorder.meet.jit.si",
+  "hiddenDomain": "recorder.meet.vins.hr",
   "enableLipSync": false,
-  "minHDHeight": 540,
+  "minHDHeight": 720,
   "useRoomAsSharedDocumentName": false,
   "recordingType": "colibri",
-  "bosh": '//meet.jit.si/http-bind',
-  "websocket": 'wss://meet.jit.si/xmpp-websocket',
+  "bosh": '//meet.vins.hr/http-bind',
+  "websocket": 'wss://meet.vins.hr/xmpp-websocket',
   "startAudioMuted": 9,
   "openSctp": true,
-  "clientNode": "http://igniterealtime.org/ofmeet/jitsi-meet/",
+  "clientNode": "http://vins.hr/",
   "conferences": [],
-  "webinar": false,
+  "webinar": true,
   "channelLastN": -1,
   "desktopSharingFirefoxDisabled": false,
   "adaptiveLastN": false,
   "hosts": {
-    "domain": "meet.jit.si",
-    "focus": "focus.meet.jit.si",
-    "muc": "conference.meet.jit.si",
-    "bridge": "jitsi-videobridge.meet.jit.si"
+    "domain": "meet.vins.hr",
+    "focus": "focus.meet.vins.hr",
+    "muc": "conference.meet.vins.hr",
+    "bridge": "jitsi-videobridge.meet.vins.hr"
   },
   "logStats": false,
   "useRtcpMux": true,
   "requireDisplayName": true,
   "startVideoMuted": 9,
   "adaptiveSimulcast": false,
-  "enforcedBridge": "jitsi-videobridge.meet.jit.si",
+  "enforcedBridge": "jitsi-videobridge.meet.vins.hr",
   "useBundle": true,
   "p2p": {
     "disableH264": true,
     "preferH264": true,
-    "useStunTurn": false,
+    "useStunTurn": true,
     "enabled": true
   },
   "desktopSharingChromeDisabled": false,
@@ -64,5 +64,5 @@ var config = {
   "disableSimulcast": true,
   "startAudioOnly": false,
   "stereo": false,
-  "focusUserJid": "focus@meet.jit.si"
+  "focusUserJid": "focus@auth.meet.vins.hr"
 };
